@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Club</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* CSS reset */
+    body {
+        font-family: 'Baloo Bhai 2', cursive;
+        color:black;
+        margin: 0px;
+        padding: 0px;
+        background: url('img/1.jpg');
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-position: 0% 0%;
+        background-size: auto 100%;
+
+    }
+
+    .left {
+        display: inline-block;
+        /* border: 2px solid red; */
+        position: absolute;
+        left: 60px;
+        top: 20px;
+
+    }
+
+    .left img {
+        width: 70px;
+        filter: invert(100%);
+
+
+    }
+
+    .left div {
+        line-height: 19px;
+        font-size: 20px;
+        text-align: center;
+        color: rgb(252, 14, 14);
+    }
+
+    .mid {
+
+        display: block;
+        width: 50%;
+        margin: 29px auto;
+        /* border: 2px solid green; */
+
+    }
+
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 43px;
+        display: inline-block;
+        /* border: 2px solid yellow; */
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 25px;
+    }
+
+    .navbar li a {
+        color: red;
+        text-decoration: none;
+        padding: 44px 23px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        color:green;
+        text-decoration: underline;
+
+    }
+
+    .btn {
+        font-family: 'Baloo Bhai 2', cursive;
+        margin: 0px 9px;
+        color: white;
+        background-color: black;
+        padding: 4px 14px;
+        border: 2px solid white;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: turquoise;
+    }
+
+    .container {
+        border: 2px solid black;
+        margin: 106px 80px;
+        padding: 75px;
+        width: 33%;
+        border-radius: 28px;
+    }
+
+    .form-group input {
+        font-family: 'Baloo Bhai 2', cursive;
+        text-align: center;
+        display: block;
+        width: 508px;
+        padding: 1px;
+        border: 2px solid black;
+        margin: 11px auto;
+        font-size: 25px;
+        border-radius: 8px;
+    }
+
+    .container h1 {
+        text-align: center;
+        font-family: 'Bree Serif', serif;
+    }
+
+    .container h2 {
+        text-align: center;
+        font-family: 'Bree Serif', serif;
+    }
+
+    .container button {
+        display: block;
+        width: 74%;
+        margin: 10px auto;
+    }
+
+    #about{
+    margin: 10px;
+    display: flex;  
+}
+
+#about .box{
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 2px 55px;
+    border-radius: 28px;
+    background: #f2f2f2;
+    margin-bottom: 45px;
+}
+
+#about .box img{
+    height: 140px;
+    margin: auto;
+    display: block;
+}
+
+#about .box p{
+    font-family: 'Bree Serif', serif;
+}
+
+    #contact {
+        position: relative;
+        text-align: center;
+        font-size: 1.9rem;
+    }
+
+    #contact::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 0.7;
+    }
+
+    #contact-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 34px;
+    }
+
+    #contact-box input,
+    #contact-box textarea {
+        width: 100%;
+        padding: 0.5rem;
+        border-radius: 9px;
+        font-size: 1.1rem;
+    }
+
+    #contact-box form {
+        width: 40%;
+    }
+
+    #contact-box label {
+        font-size: 1.3rem;
+        font-family: 'Bree Serif', serif;
+    }
+
+    .h-primary{
+    font-family: 'Bree Serif', serif;
+    font-size: 3.8rem;
+    padding: 12px;
+}
+
+.center{
+    text-align: center;
+}
+</style>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="img/2.png" alt="">
+            <div>Fitness Club</div>
+        </div>
+        <!-- mid box foe navigation -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">Call us</button><button class="btn">Email us</button>
+        </div>
+
+    </header>
+    <section id="home">
+        
+    <div class="container">
+        <h1>Fitness club welcomes you!!</h1> 
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Email id">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Phone no.">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+    </section>
+
+    <section class="about-container">
+        <h1 class="h-primary center">About Us</h1>
+        <div id="about">
+            <div class="box">
+                <img src="img/3.jpg" alt="">
+                <h2 class="h-secondary center">FitnessClub-We Provide best results</h2>
+                <p class="center">Fitness club is a gym that has been opened on 1st august,2015. Our gym aims at providing all the facilities with modern equipments.The trainers also takes well care of the clients which helps in providing the best results.</p>
+            </div>
+            <div class="box">
+                <img src="img/4.jpg" alt="">
+                <h2 class="h-secondary center">Since 2015</h2>
+                <p class="center">It has been more than 5 years now and we have been improving in facilites even more. Clients cn actually feel the difference in their bodies with the help of the trainer's guidance.We aim to provide everything required and wishes to overcome your expectations!</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h1 class="h-primary center">Contact Us</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="name">Email: </label>
+                    <input type="email" name="name" id="name" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="name">Phone Number: </label>
+                    <input type="phone" name="name" id="name" placeholder="Enter your phone">
+                </div>
+                <div class="form-group">
+                    <label for="name">Message: </label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+            </form>
+        </div>
+    </section>
+
+</body>
+
+</html>
